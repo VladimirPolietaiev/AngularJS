@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/ITEA/ITEA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WDR" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WDR/WDR-31" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/product" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/proekt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_Canvas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_practice_JS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scenarii" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scenariiProd" vcs="Git" />
+  </component>
+</project>
