@@ -15,6 +15,9 @@
 			<h1>
 				<!--<img class="photo" src="images/VZ.jpg">-->
 				{{::todo.user}}`s To Do List
+				<span class="label label-default" ng-hide="incompleteCount(todo.items) ===0">
+				{{incompleteCount(todo.items)}}
+				</span>
 			</h1>
 		</div>
 		<div class="panel">
@@ -34,12 +37,14 @@
 					<tr>
 						<th>Description</th>
 						<th>Done</th>
+						<th>Checkbox</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr ng-repeat="item in todo.items">
 						<td>{{item.action}}</td>
 						<td>{{item.done}}</td>
+						<th><input type="checkbox" ng-model="item.done"> </th>
 					</tr>
 
 					<!--<tr><td>Estimate...</td><td>No</td></tr>-->

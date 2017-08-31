@@ -16,7 +16,15 @@
 
     function Todo($scope, model) {
         $scope.todo = model;
-        console.log(model);
-    }
+        $scope.incompleteCount = incompleteCount;
 
+        function incompleteCount(items) {
+            var count = 0;
+
+            angular.forEach(items,function (item) {
+                if (!item.done)count++;
+            });
+            return count++;
+        }
+    }
 })();
