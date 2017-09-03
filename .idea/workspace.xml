@@ -1562,9 +1562,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/.idea/dictionaries/Admin.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/WDR-31/css/style4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/WDR-31/html/444.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/WDR-31/stydy.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WDR/battleship_tester.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/.idea/jsLibraryMappings.xml" />
@@ -1691,25 +1688,23 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenariiProd/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenariiProd/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenariiProd/hometask_1.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/proekt.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-31/.idea/workspace.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/WDR/WDR-42/battleship_tester.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project_Canvas/img.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project_practice_JS/images/Nasledovanie-klassov-v-javascript.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/scenariiProd/test_learn_js.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITEA/ITEA" afterPath="$PROJECT_DIR$/ITEA/ITEA" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR" afterPath="$PROJECT_DIR$/WDR" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product" afterPath="$PROJECT_DIR$/product" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proekt" afterPath="$PROJECT_DIR$/proekt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_Canvas" afterPath="$PROJECT_DIR$/project_Canvas" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_practice_JS" afterPath="$PROJECT_DIR$/project_practice_JS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenarii" afterPath="$PROJECT_DIR$/scenarii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenariiProd" afterPath="$PROJECT_DIR$/scenariiProd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular_JS/vendor/angular/angular.min.js" afterPath="$PROJECT_DIR$/Angular_JS/vendor/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/.idea/workspace.xml" afterPath="$PROJECT_DIR$/WDR/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-31/css/111.css" afterPath="$PROJECT_DIR$/WDR/WDR-31/css/111.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-31/css/style3.css" afterPath="$PROJECT_DIR$/WDR/WDR-31/css/style3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-31/html/333.html" afterPath="$PROJECT_DIR$/WDR/WDR-31/html/333.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-31/html/jsTest.html" afterPath="$PROJECT_DIR$/WDR/WDR-31/html/jsTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-31/html/main.html" afterPath="$PROJECT_DIR$/WDR/WDR-31/html/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-42/battleship_tester.js" afterPath="$PROJECT_DIR$/WDR/WDR-42/battleship_tester.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WDR/WDR-49/wdr-49.html" afterPath="$PROJECT_DIR$/WDR/WDR-49/wdr-49.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proekt/.idea/workspace.xml" afterPath="$PROJECT_DIR$/proekt/.idea/workspace.xml" />
@@ -1792,17 +1787,40 @@
         <favorite_root url="file://$PROJECT_DIR$/Angular_JS/css/main.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
         <favorite_root url="file://$PROJECT_DIR$/Angular_JS/css/ng-cloak.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       </favorite_root>
+      <favorite_root url="file://$PROJECT_DIR$/Angular_JS/vendor/angular/angular.min.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.61495066">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Angular_JS/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                <state relative-caret-position="192">
+                  <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+                  <folding>
+                    <element signature="n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ng-cloak.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Angular_JS/css/ng-cloak.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Angular_JS/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -1811,12 +1829,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Angular_JS/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -1836,7 +1854,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/project_practice_JS" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1887,8 +1905,8 @@
         <option value="$PROJECT_DIR$/project_practice_JS/lessons/9.FILTER/index_JQ.html" />
         <option value="$PROJECT_DIR$/project_practice_JS/lessons/9.FILTER/script.js" />
         <option value="$PROJECT_DIR$/project_practice_JS/lessons/9.FILTER/jq.js" />
-        <option value="$PROJECT_DIR$/Angular_JS/app.js" />
         <option value="$PROJECT_DIR$/Angular_JS/index.html" />
+        <option value="$PROJECT_DIR$/Angular_JS/app.js" />
       </list>
     </option>
   </component>
@@ -1961,10 +1979,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Angular_JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2130,7 +2166,10 @@
       <workItem from="1502027139392" duration="1552000" />
       <workItem from="1502103359409" duration="7222000" />
       <workItem from="1502375371103" duration="6423000" />
-      <workItem from="1504104038859" duration="7995000" />
+      <workItem from="1504104038859" duration="8384000" />
+      <workItem from="1504115025690" duration="3669000" />
+      <workItem from="1504121294630" duration="544000" />
+      <workItem from="1504190258940" duration="9342000" />
     </task>
     <task id="LOCAL-00001" summary="don`t work">
       <created>1495132184705</created>
@@ -2321,11 +2360,39 @@
       <option name="project" value="LOCAL" />
       <updated>1502382186921</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add angular.min.js">
+      <created>1504121396408</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1504121396408</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add bootstrap">
+      <created>1504190457177</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1504190457177</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add ng-repeat">
+      <created>1504196611542</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1504196611542</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add ng-module and ng-hide">
+      <created>1504203400923</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1504203400923</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166095000" />
+    <option name="totallyTimeSpent" value="180039000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -2337,14 +2404,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14598025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35814607" sideWeight="0.50634694" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253857" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44662923" sideWeight="0.50916785" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44662923" sideWeight="0.49294782" order="7" side_tool="false" content_ui="tabs" x="11" y="325" width="1418" height="210" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31741574" sideWeight="0.49083215" order="7" side_tool="false" content_ui="tabs" x="11" y="325" width="1418" height="210" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35814607" sideWeight="0.49365303" order="7" side_tool="false" content_ui="tabs" />
@@ -2374,10 +2441,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="don`t work" />
-    <MESSAGE value="add 'tabs'" />
-    <MESSAGE value="add modal window" />
-    <MESSAGE value="add lesson 8 (slides )." />
     <MESSAGE value="add lesson 9 . &quot;search for name&quot;" />
     <MESSAGE value="add 11 lesson . map API and fixed &quot;tab&quot;" />
     <MESSAGE value="add lesson 12. not finished." />
@@ -2399,7 +2462,11 @@
     <MESSAGE value="add JQ MODAL_WINDOW" />
     <MESSAGE value="add JQ ANIMATION" />
     <MESSAGE value="add JQ filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add JQ filter" />
+    <MESSAGE value="add angular.min.js" />
+    <MESSAGE value="add bootstrap" />
+    <MESSAGE value="add ng-repeat" />
+    <MESSAGE value="add ng-module and ng-hide" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ng-module and ng-hide" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2408,13 +2475,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project_practice_JS/lessons/2.RANGE/2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_practice_JS/lessons/2.RANGE/1/index_JQ.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -2714,7 +2774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2722,7 +2781,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITEA/ITEA/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-358">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_practice_JS/lessons/9.FILTER/index_JQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -2734,34 +2806,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ITEA/ITEA/index.html">
+    <entry file="file://$PROJECT_DIR$/Angular_JS/css/ng-cloak.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_practice_JS/lessons/9.FILTER/index_JQ.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular_JS/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Angular_JS/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="192">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular_JS/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>
