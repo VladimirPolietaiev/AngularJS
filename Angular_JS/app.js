@@ -16,8 +16,19 @@
 
     function Todo($scope, model) {
         $scope.todo = model;
+        $scope.addNewItem =addNewItem;
         $scope.incompleteCount = incompleteCount;
         $scope.warningLevel = warningLevel;
+
+
+        function addNewItem(items, newItem) {
+            if (newItem && newItem.action) {
+                items.push({
+                    action: newItem.action,
+                    done: false
+                });newItem.action = "";
+            }
+        }
 
         function incompleteCount(items) {
             var count = 0;

@@ -26,9 +26,9 @@
 				<div class="form-group">
 					<label for="action">Action:</label>
 					<div class="input-group">
-						<input id="action" name="action" class="form-control">
+						<input id="action" name="action" class="form-control" ng-model="newItem.action"/>
 						<span class="input-group-btn">
-							<button class="btn btn-default">Add</button>
+							<button class="btn btn-default" ng-click="addNewItem(todo.items, newItem)">Add</button>
 						</span>
 					</div>
 				</div>
