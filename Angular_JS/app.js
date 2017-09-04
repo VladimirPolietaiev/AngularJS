@@ -17,6 +17,7 @@
     function Todo($scope, model) {
         $scope.todo = model;
         $scope.incompleteCount = incompleteCount;
+        $scope.warningLevel = warningLevel;
 
         function incompleteCount(items) {
             var count = 0;
@@ -24,7 +25,11 @@
             angular.forEach(items,function (item) {
                 if (!item.done)count++;
             });
-            return count++;
+            return count;
+        }
+
+        function warningLevel(items) {
+            return incompleteCount(items) < 3 ? "label-success" : "label-warning";
         }
     }
 })();

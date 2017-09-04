@@ -15,7 +15,8 @@
 			<h1>
 				<!--<img class="photo" src="images/VZ.jpg">-->
 				{{::todo.user}}`s To Do List
-				<span class="label label-default" ng-hide="incompleteCount(todo.items) ===0">
+				<span class="label label-default" ng-hide="incompleteCount(todo.items) ===0"
+				ng-class="warningLevel(todo.items)">
 				{{incompleteCount(todo.items)}}
 				</span>
 			</h1>
