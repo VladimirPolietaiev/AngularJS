@@ -12,10 +12,12 @@
                 { "action": "Delete...", "done": false }
             ]
         })
-        .controller("Todo", Todo);
+        .controller("Todo", Todo)
+        .filter("checkedItems",checkedItems);
 
     function Todo($scope, model) {
         $scope.todo = model;
+        // $scope.showComplete = true;
         $scope.addNewItem =addNewItem;
         $scope.incompleteCount = incompleteCount;
         $scope.warningLevel = warningLevel;
@@ -43,4 +45,23 @@
             return incompleteCount(items) < 3 ? "label-success" : "label-warning";
         }
     }
+
+    //filter
+    function checkedItems() {
+        return function (items, showComplete) {
+            var resArr =[];
+            if (angular.isArray(items)){
+                angular.forEach(items, function (item) {
+                    if (item.done == false || showComplete ===true){
+                        resArr.push(item);
+                    }
+                });
+                return resArr;
+            }else {
+                return items;
+            }
+
+        }
+    }
+
 })();

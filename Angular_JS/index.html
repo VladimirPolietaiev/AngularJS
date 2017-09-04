@@ -44,7 +44,8 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="item in todo.items | filter:{done: 'false'} | orderBy: 'action'">
+					<!--<tr ng-repeat="item in todo.items | filter:{done: 'false'} | orderBy: 'action'">-->
+					<tr ng-repeat="item in todo.items | checkedItems: showComplete | orderBy: 'action'">
 						<td>{{item.action}}</td>
 						<td>{{item.done}}</td>
 						<th><input type="checkbox" ng-model="item.done"> </th>
@@ -56,6 +57,10 @@
 					<!--<tr><td>Delete...</td><td>No</td></tr>-->
 				</tbody>
 			</table>
+			<div>
+				<label>
+				<input type="checkbox" ng-model="showComplete">Show Complete
+				</label>
 		</div>
 	</div>
     <script src="vendor/angular/angular.min.js"></script>
