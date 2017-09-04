@@ -28,7 +28,9 @@
 					<div class="input-group">
 						<input id="action" name="action" class="form-control" ng-model="newItem.action"/>
 						<span class="input-group-btn">
-							<button class="btn btn-default" ng-click="addNewItem(todo.items, newItem)">Add</button>
+							<button class="btn btn-default"
+									ng-click="addNewItem(todo.items, newItem)"
+									ng-disabled ="!newItem || !newItem.action">Add</button>
 						</span>
 					</div>
 				</div>
