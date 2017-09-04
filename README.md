@@ -1,2 +1,0 @@
-# AngularJS
-# Angular_JS
