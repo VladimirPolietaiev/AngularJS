@@ -20,8 +20,8 @@
     function runApp($http, model) {
         $http
             .get("todo.json")
-            .success(function(data) {
-                model.items = data;
+            .then(function(data){
+                model.items = data.data;
             });
     }
 
