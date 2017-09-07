@@ -15,7 +15,8 @@
             // ]
         })
         .controller("Todo", Todo)
-        .filter("checkedItems",checkedItems);
+        .filter("checkedItems",checkedItems)
+        .directive("taskList",taskList);
 
     function runApp($http, model) {
         $http
@@ -72,6 +73,13 @@
             }
 
         }
+    }
+
+    function taskList() {
+        return {
+            restrict:"A",
+            templateUrl:"table.html"  
+        };
     }
 
 })();

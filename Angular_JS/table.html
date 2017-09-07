@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Done</th>
+            <th>Checkbox</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in todo.items | checkedItems: showComplete | orderBy: 'action'">
+            <td>{{item.action}}</td>
+            <td>{{item.done}}</td>
+            <th><input type="checkbox" ng-model="item.done"> </th>
+        </tr>
+    </tbody>
+</table>

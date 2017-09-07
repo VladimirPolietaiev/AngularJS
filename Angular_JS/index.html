@@ -39,28 +39,31 @@
 					</div>
 				</div>
 			</form>
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th>Description</th>
-						<th>Done</th>
-						<th>Checkbox</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!--<tr ng-repeat="item in todo.items | filter:{done: 'false'} | orderBy: 'action'">-->
-					<tr ng-repeat="item in todo.items | checkedItems: showComplete | orderBy: 'action'">
-						<td>{{item.action}}</td>
-						<td>{{item.done}}</td>
-						<th><input type="checkbox" ng-model="item.done"> </th>
-					</tr>
 
-					<!--<tr><td>Estimate...</td><td>No</td></tr>-->
-					<!--<tr><td>Create...</td><td>No</td></tr>-->
-					<!--<tr><td>Edit...</td><td>Yes</td></tr>-->
-					<!--<tr><td>Delete...</td><td>No</td></tr>-->
-				</tbody>
-			</table>
+			<!--<table class="table table-striped">-->
+				<!--<thead>-->
+					<!--<tr>-->
+						<!--<th>Description</th>-->
+						<!--<th>Done</th>-->
+						<!--<th>Checkbox</th>-->
+					<!--</tr>-->
+				<!--</thead>-->
+				<!--<tbody>-->
+					<!--&lt;!&ndash;<tr ng-repeat="item in todo.items | filter:{done: 'false'} | orderBy: 'action'">&ndash;&gt;-->
+					<!--<tr ng-repeat="item in todo.items | checkedItems: showComplete | orderBy: 'action'">-->
+						<!--<td>{{item.action}}</td>-->
+						<!--<td>{{item.done}}</td>-->
+						<!--<th><input type="checkbox" ng-model="item.done"> </th>-->
+					<!--</tr>-->
+
+					<!--&lt;!&ndash;<tr><td>Estimate...</td><td>No</td></tr>&ndash;&gt;-->
+					<!--&lt;!&ndash;<tr><td>Create...</td><td>No</td></tr>&ndash;&gt;-->
+					<!--&lt;!&ndash;<tr><td>Edit...</td><td>Yes</td></tr>&ndash;&gt;-->
+					<!--&lt;!&ndash;<tr><td>Delete...</td><td>No</td></tr>&ndash;&gt;-->
+				<!--</tbody>-->
+			<!--</table>-->
+
+			<div task-list></div>
 			<div>
 				<label>
 				<input type="checkbox" ng-model="showComplete">Show Complete
