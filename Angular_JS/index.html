@@ -11,17 +11,20 @@
 </head>
 <body ng-controller ="Todo">
 	<div class="container">
-		<div class="page-header">
-			<h1>
-				<!--<img class="photo" src="images/VZ.jpg">-->
-				<img class="photo" ng-src={{::todo.userPhoto}}>
-				{{::todo.user}}`s To Do List
-				<span class="label label-default" ng-hide="incompleteCount(todo.items) ===0"
-				ng-class="warningLevel(todo.items)">
-				{{incompleteCount(todo.items)}}
-				</span>
-			</h1>
-		</div>
+		<div ng-include="'page-header.html'"></div>
+
+		<!--<div class="page-header">-->
+			<!--<h1>-->
+				<!--&lt;!&ndash;<img class="photo" src="images/VZ.jpg">&ndash;&gt;-->
+				<!--<img class="photo" ng-src={{::todo.userPhoto}}>-->
+				<!--{{::todo.user}}`s To Do List-->
+				<!--<span class="label label-default" ng-hide="incompleteCount(todo.items) ===0"-->
+				<!--ng-class="warningLevel(todo.items)">-->
+				<!--{{incompleteCount(todo.items)}}-->
+				<!--</span>-->
+			<!--</h1>-->
+		<!--</div>-->
+
 		<div class="panel">
 			<form novalidate name="newTask">
 				<div class="form-group">
