@@ -4,9 +4,10 @@
     angular.module("app")
         .directive("highlight", highlight);
 
-    function highlight() {
+    function highlight($filter) {
+        var  dayFilter = $filter("dayName");
        return function (scope, element, attrs) {
-           if(scope.day === attrs["highlight"]){
+           if(dayFilter(scope.day) === attrs["highlight"]){
                element.css("color", "red");
            }
        }
