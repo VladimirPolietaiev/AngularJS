@@ -4,10 +4,10 @@
     angular.module("app")
         .controller("dayCtrl", dayCtrl);
 
-    function dayCtrl($scope) {
+    function dayCtrl($scope, days) {
         // var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-        $scope.day = new Date().getDay();
+        $scope.day = days.today;
+        // $scope.day = new Date().getDay();
         // $scope.day = dayNames[new Date().getDay()];
         // $scope.tomorrow = dayNames[(new Date().getDay()+1)%7];
     }
