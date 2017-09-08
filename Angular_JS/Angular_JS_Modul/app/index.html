@@ -7,15 +7,16 @@
 	<link href="vendor/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/ng-cloak.css" rel="stylesheet">
 </head>
-<body>
+<body ng ng-controller="dayCtrl">
 	<div class="panel">
 		<div class="page-header">
 			<h3>AngularJS App</h3>
 		</div>
-		<h4>Today is </h4>
+		<h4>Today is {{day ||  "(unknow)"}}</h4>
 	</div>
 
 	<script src="vendor/angular/angular.min.js"></script>
 	<script src="app.js"></script>
+	<script src="dayCtrl.js"></script>
 </body>
 </html>
