@@ -12,7 +12,7 @@
 		<div class="page-header">
 			<h3>AngularJS App</h3>
 		</div>
-		<h4 ng-controller="dayCtrl">Today is {{day ||  "(unknow)"}}</h4>
+		<h4 ng-controller="dayCtrl" highlight ="Friday">Today is {{day ||  "(unknow)"}}</h4>
 		<h4 ng-controller="tomorrowCtrl">Tomorrow is {{tomorrow ||  "(unknow)"}}</h4>
 	</div>
 
@@ -20,5 +20,6 @@
 	<script src="app.js"></script>
 	<script src="dayCtrl.js"></script>
 	<script src="tomorrowCtrl.js"></script>
+	<script src="highlight.js"></script>
 </body>
 </html>
