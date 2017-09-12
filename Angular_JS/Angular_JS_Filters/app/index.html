@@ -23,6 +23,7 @@
 						<th>Category</th>
 						<th>Expiry</th>
 						<th class="text-right">Price</th>
+						<!--<th>JSON</th>-->
 					</tr>
 				</thead>
 				<tbody>
@@ -31,6 +32,7 @@
 						<td>{{p.category | uppercase}}</td>
 						<td>{{vm.getExpiryDate(p.expiry) | date: "dd.MM.yyyy"}}</td>
 						<td class="text-right">{{p.price | currency: "$"}}</td>
+						<!--<td>{{p | json}}</td>-->
 					</tr>
 				</tbody>
 			</table>
