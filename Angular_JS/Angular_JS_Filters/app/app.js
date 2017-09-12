@@ -8,6 +8,12 @@
 	function defaultController(productData) {
 		var vm = this;
 		vm.products = productData.products;
+		vm.getExpiryDate = getExpiryDate;
+		
+		function getExpiryDate(days) {
+			var now =new Date();
+			return now.setDate(now.getDate() + days);
+		}
 
 
 		// vm.htmlSnippet = 
