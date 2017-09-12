@@ -30,7 +30,7 @@
 						<td>{{p.name | lowercase}}</td>
 						<td>{{p.category | uppercase}}</td>
 						<td>{{p.expiry}}</td>
-						<td class="text-right">{{p.price}}</td>
+						<td class="text-right">{{p.price | currency}}</td>
 					</tr>
 				</tbody>
 			</table>
@@ -39,7 +39,7 @@
 			<!-- <div ng-bind-html="vm.htmlSnippet"></div> -->
 			<!-- <div ng-bind-html="vm.htmlSnippet | linky"></div> -->
 		</div>
-	<div>
+	</div>
 
 	<script src="vendor/angular/angular.min.js"></script>
 	<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
