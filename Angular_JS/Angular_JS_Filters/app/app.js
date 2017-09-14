@@ -10,10 +10,15 @@
 		vm.pageCount = 3;
 		vm.products = productData.products;
 		vm.getExpiryDate = getExpiryDate;
+		vm.customSorter = customSorter;
 		
 		function getExpiryDate(days) {
 			var now =new Date();
 			return now.setDate(now.getDate() + days);
+		}
+
+		function customSorter(product) {
+			return product.expiry < 5 ? 0 : product.price;
 		}
 
 
