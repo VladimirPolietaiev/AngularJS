@@ -30,7 +30,7 @@
 					<tr ng-repeat="p in vm.products">
 						<td>{{p.name | lowercase}}</td>
 						<td>{{p.category | uppercase}}</td>
-						<td>{{vm.getExpiryDate(p.expiry) | date: "dd.MM.yyyy"}}</td>
+						<td>{{vm.getExpiryDate(p.expiry) | date}}</td>
 						<td class="text-right">{{p.price | currency: "$"}}</td>
 						<!--<td>{{p | json}}</td>-->
 					</tr>
@@ -45,7 +45,8 @@
 
 	<script src="vendor/angular/angular.min.js"></script>
 	<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
-	
+	<script src="vendor/angular-locale/angular-locale_uk-ua.js"></script>
+
 	<script src="app.js"></script>
 	<script src="feature/feature.module.js"></script>
 	<script src="feature/productDataSrv.js"></script>
