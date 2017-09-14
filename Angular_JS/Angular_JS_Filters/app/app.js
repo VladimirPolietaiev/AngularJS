@@ -7,6 +7,7 @@
 
 	function defaultController(productData) {
 		var vm = this;
+		vm.pageCount = 3;
 		vm.products = productData.products;
 		vm.getExpiryDate = getExpiryDate;
 		
