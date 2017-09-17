@@ -32,7 +32,8 @@
 					<!--<tr ng-repeat="p in vm.products | limitTo: vm.pageCount">-->
 					<!--<tr ng-repeat="p in vm.products | orderBy: [vm.customSorter,'price']">-->
 					<!--<tr ng-repeat="p in vm.products | filter: vm.search">-->
-					<tr ng-repeat="p in vm.products | filter: vm.selectedProducts">
+					<!--<tr ng-repeat="p in vm.products | filter: vm.selectedProducts">-->
+					<tr ng-repeat="p in vm.products | filter: vm.search | orderBy: 'price' | limitTo: vm.pageCount">
 						<td>{{p.name | lowercase}}</td>
 						<td>{{p.category | uppercase}}</td>
 						<td>{{vm.getExpiryDate(p.expiry) | date}}</td>
@@ -46,7 +47,7 @@
 			<!-- <div ng-bind-html="vm.htmlSnippet"></div> -->
 			<!-- <div ng-bind-html="vm.htmlSnippet | linky"></div> -->
 		</div>
-	<div>
+	</div>
 
 	<script src="vendor/angular/angular.min.js"></script>
 	<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
