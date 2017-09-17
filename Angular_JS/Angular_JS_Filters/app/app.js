@@ -11,6 +11,7 @@
 		vm.products = productData.products;
 		vm.getExpiryDate = getExpiryDate;
 		vm.customSorter = customSorter;
+		vm.selectedProducts =selectedProducts;
 		
 		function getExpiryDate(days) {
 			var now =new Date();
@@ -21,6 +22,9 @@
 			return product.expiry < 5 ? 0 : product.price;
 		}
 
+		function selectedProducts(product) {
+			return product.category === 'Fish' || product.name === 'Bananas'
+		}
 
 		// vm.htmlSnippet = 
 		// 	'Pretty text with some links:\n'+

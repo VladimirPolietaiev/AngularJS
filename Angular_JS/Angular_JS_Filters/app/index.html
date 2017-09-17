@@ -31,7 +31,8 @@
 				<div>
 					<!--<tr ng-repeat="p in vm.products | limitTo: vm.pageCount">-->
 					<!--<tr ng-repeat="p in vm.products | orderBy: [vm.customSorter,'price']">-->
-					<tr ng-repeat="p in vm.products | filter: vm.search">
+					<!--<tr ng-repeat="p in vm.products | filter: vm.search">-->
+					<tr ng-repeat="p in vm.products | filter: vm.selectedProducts">
 						<td>{{p.name | lowercase}}</td>
 						<td>{{p.category | uppercase}}</td>
 						<td>{{vm.getExpiryDate(p.expiry) | date}}</td>
