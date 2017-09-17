@@ -3,7 +3,9 @@
 
 	angular
 		.module("app", ["ngSanitize", "feature"])
-		.controller("defaultController", defaultController);
+		.controller("defaultController", defaultController)
+		.filter("labelCase", labelCase)
+		.filter("skip", skip);
 
 	function defaultController(productData) {
 		var vm = this;
@@ -11,10 +13,11 @@
 		vm.products = productData.products;
 		vm.getExpiryDate = getExpiryDate;
 		vm.customSorter = customSorter;
-		vm.selectedProducts =selectedProducts;
-		
+		vm.selectedProducts = selectedProducts;
+
+
 		function getExpiryDate(days) {
-			var now =new Date();
+			var now = new Date();
 			return now.setDate(now.getDate() + days);
 		}
 
@@ -25,14 +28,30 @@
 		function selectedProducts(product) {
 			return product.category === 'Fish' || product.name === 'Bananas'
 		}
-
-		// vm.htmlSnippet = 
-		// 	'Pretty text with some links:\n'+
-		// 	'http://angularjs.org/,\n'+
-		// 	'mailto:us@somewhere.org,\n'+
-		// 	'another@somewhere.org,\n'+
-		// 	'and one more: ftp://127.0.0.1/.';
 	}
+
+		function labelCase() {
+			return function (value, reverse) {
+				if (angular.isString(value)) {
+					return reverse
+						? value.substr(0, 1).toLowerCase() + value.substr(1).toUpperCase()
+						: value.substr(0, 1).toUpperCase() + value.substr(1).toLowerCase();
+				} else {
+					return value;
+				}
+			};
+		}
+
+		function skip() {
+			return function (value, count) {
+				if (angular.isArray(value)) {
+					return value.slice(count);
+				} else {
+					return value;
+				}
+			};
+		}
+
 
 })();
 
