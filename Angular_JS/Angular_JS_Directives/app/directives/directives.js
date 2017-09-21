@@ -87,12 +87,20 @@
                         var itemElem = angular.element("<li>");
                         listElem.append(itemElem);
 
-                        var watchFn = function (watchScope) {
-                            return watchScope.$eval(propertyName,dataItem);
+                        // var watchFn = function (watchScope) {
+                        //     return watchScope.$eval(propertyName,dataItem);
+                        // };
+                        //
+                        // scope.$watch(watchFn, function (newVal, oldVal) {
+                        //     itemElem.text(newVal);
+                        // });
+
+                        var  watcherFn = function(watchScope) {
+                            return dataItem;
                         };
 
-                        scope.$watch(watchFn, function (newVal, oldVal) {
-                            itemElem.text(newVal);
+                        scope.$watchCollection(watcherFn, function (newVal, oldVal) {
+                           itemElem.text(scope.$eval(propertyName, newVal));
                         });
 
 
