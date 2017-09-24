@@ -8,7 +8,9 @@
         .directive("unorderedList3", unorderedList3)
         .directive("unorderedList4", unorderedList4)
         .directive("unorderedList5", unorderedList5)
-         ;
+        .directive("unorderedListAttrs", unorderedListAttrs)
+
+    ;
     
     
     function unorderedList1() {
@@ -87,14 +89,6 @@
                         var itemElem = angular.element("<li>");
                         listElem.append(itemElem);
 
-                        // var watchFn = function (watchScope) {
-                        //     return watchScope.$eval(propertyName,dataItem);
-                        // };
-                        //
-                        // scope.$watch(watchFn, function (newVal, oldVal) {
-                        //     itemElem.text(newVal);
-                        // });
-
                         var  watcherFn = function(watchScope) {
                             return dataItem;
                         };
@@ -111,5 +105,39 @@
         };
     }
 
+    function unorderedListAttrs() {
+        return {
+            link:function (scope, element, attrs) {
+                attrs.$observe("listProperty" , function (newVal, oldVal) {
+                    element.html("");
+
+                    var data = scope[attrs["unorderedListAttrs"]];
+                    var propertyName = newVal;
+
+                    if(angular.isArray(data)){
+                        var listElem = angular.element("<ul>");
+
+
+                        angular.forEach(data, function (dataItem) {
+                            var itemElem = angular.element("<li>");
+                            listElem.append(itemElem);
+
+                            var  watcherFn = function(watchScope) {
+                                return dataItem;
+                            };
+
+                            scope.$watchCollection(watcherFn, function (newVal, oldVal) {
+                                itemElem.text(scope.$eval(propertyName, newVal));
+                            });
+
+
+                        });
+                        element.append(listElem);
+                    }
+                });
+
+            }
+        };
+    }
 
 })();

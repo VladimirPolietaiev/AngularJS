@@ -29,8 +29,18 @@
 
 			<!-- task 4 -->
 
-			<button class="btn btn-primary" ng-click="incrementPrices()">Chenge Price</button>
-			<div unordered-list5="products" list-property ="price | currency"></div>
+			<!--<button class="btn btn-primary" ng-click="incrementPrices()">Chenge Price</button>-->
+			<!--<div unordered-list5="products" list-property ="price | currency"></div>-->
+
+			<!-- task 5 -->
+
+			<select ng-model="data.field">
+				<option selected value="price | currency">Price</option>
+				<option  value="name">Name</option>
+				<option  value="category">Category</option>
+			</select>
+
+			<div unordered-list-attrs="products" list-property ="{{data.field}}"></div>
 
 		</div>
 	</div>
