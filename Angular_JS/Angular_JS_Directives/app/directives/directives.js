@@ -9,6 +9,8 @@
         .directive("unorderedList4", unorderedList4)
         .directive("unorderedList5", unorderedList5)
         .directive("unorderedListAttrs", unorderedListAttrs)
+        .directive("unorderedListScope", unorderedListScope)
+
 
     ;
     
@@ -112,6 +114,45 @@
                     element.html("");
 
                     var data = scope[attrs["unorderedListAttrs"]];
+                    var propertyName = newVal;
+
+                    if(angular.isArray(data)){
+                        var listElem = angular.element("<ul>");
+
+
+                        angular.forEach(data, function (dataItem) {
+                            var itemElem = angular.element("<li>");
+                            listElem.append(itemElem);
+
+                            var  watcherFn = function(watchScope) {
+                                return dataItem;
+                            };
+
+                            scope.$watchCollection(watcherFn, function (newVal, oldVal) {
+                                itemElem.text(scope.$eval(propertyName, newVal));
+                            });
+
+
+                        });
+                        element.append(listElem);
+                    }
+                });
+
+            }
+        };
+    }
+
+    function unorderedListScope() {
+        return {
+            scope:{
+                unorderedListScope:"=",
+                listProperty:"="
+            },
+            link:function (scope, element, attrs) {
+                scope.$watch("listProperty" , function (newVal, oldVal) {
+                    element.html("");
+
+                    var data = scope.unorderedListScope;
                     var propertyName = newVal;
 
                     if(angular.isArray(data)){
