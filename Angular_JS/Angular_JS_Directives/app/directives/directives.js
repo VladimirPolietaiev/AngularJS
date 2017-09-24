@@ -10,7 +10,7 @@
         .directive("unorderedList5", unorderedList5)
         .directive("unorderedListAttrs", unorderedListAttrs)
         .directive("unorderedListScope", unorderedListScope)
-
+        .directive("unorderedList6", unorderedList6)
 
     ;
     
@@ -177,6 +177,34 @@
                     }
                 });
 
+            }
+        };
+    }
+
+    function unorderedList6() {
+        return {
+            restrict:"EACM",
+
+            link:function (scope, element, attrs) {
+                var data = scope[attrs["unorderedList6"] || attrs["listSource"]];
+                var propertyName = attrs["listProperty"] || "price | currency";
+
+                if(angular.isArray(data)){
+                    var listElem = angular.element("<ul>");
+
+
+                    angular.forEach(data, function (dataItem) {
+                        var itemElem = angular.element("<li>").text(scope.$eval(propertyName, dataItem));
+                        listElem.append(itemElem);
+
+                    });
+                    if(element[0].nodeName === "#comment"){
+                        element.parent().append(listElem);
+                    }
+                    else {
+                        element.append(listElem);
+                    }
+                }
             }
         };
     }

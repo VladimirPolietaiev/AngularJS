@@ -34,13 +34,35 @@
 
 			<!-- task 5 -->
 
-			<select ng-model="data.field">
-				<option selected value="price | currency">Price</option>
-				<option  value="name">Name</option>
-				<option  value="category">Category</option>
-			</select>
+			<!--<select ng-model="data.field">-->
+				<!--<option selected value="price | currency">Price</option>-->
+				<!--<option  value="name">Name</option>-->
+				<!--<option  value="category">Category</option>-->
+			<!--</select>-->
 
-			<div unordered-list-scope="products" list-property ="data.field"></div>
+			<!--<div unordered-list-scope="products" list-property ="data.field"></div>-->
+
+			<!-- task 6   -->
+
+			<div class="panel-body">
+				<h5>Директива как элемент</h5>
+				<unordered-list6 list-source="products" list-property="price | currency" />
+			</div>
+
+			<div class="panel-body">
+				<h5>Директива как атрибут</h5>
+				<div unordered-list6="products" list-property="price | currency"></div>
+			</div>
+
+			<div class="panel-body">
+				<h5>Директива как класс</h5>
+				<div class="unordered-list6: products" list-property="price | currency"></div>
+			</div>
+
+			<div class="panel-body">
+				<h5>Директива как комментарий</h5>
+				<!-- directive: unordered-list6 products -->
+			</div>
 
 		</div>
 	</div>
