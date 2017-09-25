@@ -74,7 +74,7 @@
 
 			<!-- task 9   -->
 
-			<div unordered-list9="products"></div>
+			<div unordered-list10="products"></div>
 
 		</div>
 	</div>
@@ -90,6 +90,11 @@
 	<script src="services/productsData.js"></script>
 	<script src="services/userData.js"></script>
 	<script src="directives/directives.js"></script>
+	<script id="listTemplate" type="text/template">
+		<ul>aaa
+			<li ng-repeat="item in data">{{item.price | currency}}</li>
+		</ul>
+	</script>
 </body>
 </html>
 

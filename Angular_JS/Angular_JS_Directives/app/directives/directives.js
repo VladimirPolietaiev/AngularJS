@@ -14,6 +14,7 @@
         .directive("unorderedList7", unorderedList7)
         .directive("unorderedList8", unorderedList8)
         .directive("unorderedList9", unorderedList9)
+        .directive("unorderedList10", unorderedList10)
     ;
     
     
@@ -241,6 +242,18 @@
             template:"<ul><li ng-repeat='item in data'>{{item.price | currency}}</li></ul>",
             link:function (scope, element, attrs) {
                 scope.data = scope[attrs["unorderedList9"]];
+            }
+        };
+    }
+
+    function unorderedList10() {
+        return {
+            restrict:"A",
+            template:function (tElem, tAttrs) {
+                return angular.element( document.querySelector("#listTemplate")).html();
+            },
+            link:function (scope, element, attrs) {
+                scope.data = scope[attrs["unorderedList10"]];
             }
         };
     }
