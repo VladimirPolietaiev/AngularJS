@@ -273,6 +273,7 @@
     function unorderedList12() {
         return {
             restrict:"A",
+            replace: true,
             templateUrl:function (tElem, tAttrs) {
                 return tAttrs["template"] === "table"
                         ? "templates/tableTemplate.html"
