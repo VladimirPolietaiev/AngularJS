@@ -11,7 +11,7 @@
         .directive("unorderedListAttrs", unorderedListAttrs)
         .directive("unorderedListScope", unorderedListScope)
         .directive("unorderedList6", unorderedList6)
-
+        .directive("unorderedList7", unorderedList7)
     ;
     
     
@@ -205,6 +205,18 @@
                         element.append(listElem);
                     }
                 }
+            }
+        };
+    }
+
+    function unorderedList7() {
+        return {
+            restrict:"A",
+
+            link:function (scope, element, attrs) {
+                var markup ="<ul><li ng-repeat='item in data'>{{item.price | currency}}</li></ul>";
+                scope.data = scope[attrs["unorderedList7"]];
+                element.html(markup);
             }
         };
     }
