@@ -16,6 +16,7 @@
         .directive("unorderedList9", unorderedList9)
         .directive("unorderedList10", unorderedList10)
         .directive("unorderedList11", unorderedList11)
+        .directive("unorderedList12", unorderedList12)
     ;
     
     
@@ -265,6 +266,20 @@
             templateUrl:"templates/tableTemplate.html",
             link:function (scope, element, attrs) {
                 scope.data = scope[attrs["unorderedList11"]];
+            }
+        };
+    }
+
+    function unorderedList12() {
+        return {
+            restrict:"A",
+            templateUrl:function (tElem, tAttrs) {
+                return tAttrs["template"] === "table"
+                        ? "templates/tableTemplate.html"
+                        : "templates/itemTemplate.html"
+            },
+            link:function (scope, element, attrs) {
+                scope.data = scope[attrs["unorderedList12"]];
             }
         };
     }
