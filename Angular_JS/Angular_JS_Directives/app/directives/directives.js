@@ -20,6 +20,9 @@
         .directive("scopeDemoFalse", scopeDemoFalse)
         .directive("scopeDemoTrue", scopeDemoTrue)
         .directive("scopeDemoIsolated", scopeDemoIsolated)
+        .directive("component", component)
+        .directive("decor1", decor1)
+        .directive("decor2", decor2)
     ;
     
     
@@ -309,6 +312,40 @@
             restrict:"A",
             scope: {},
             templateUrl:"templates/userDataTemplate.html",
+        };
+    }
+
+    function component() {
+        return {
+            restrict:"E",
+            scope: false,
+            link: function (scope) {
+                scope.dataSource = "directive";
+                console.log("directive");
+                console.log("dataSource =" + scope.dataSource);
+            }
+        };
+    }
+
+    function decor1() {
+        return {
+            restrict:"A",
+            scope: false,
+            link: function (scope) {
+                console.log("decor1");
+                console.log("dataSource =" + scope.dataSource);
+            }
+        };
+    }
+
+    function decor2() {
+        return {
+            restrict:"A",
+            scope: false,
+            link: function (scope) {
+                console.log("decor2");
+                console.log("dataSource =" + scope.dataSource);
+            }
         };
     }
 
