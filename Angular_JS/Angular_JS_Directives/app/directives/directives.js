@@ -17,6 +17,7 @@
         .directive("unorderedList10", unorderedList10)
         .directive("unorderedList11", unorderedList11)
         .directive("unorderedList12", unorderedList12)
+        .directive("scopeDemoFalse", scopeDemoFalse)
     ;
     
     
@@ -282,6 +283,14 @@
             link:function (scope, element, attrs) {
                 scope.data = scope[attrs["unorderedList12"]];
             }
+        };
+    }
+
+    function scopeDemoFalse() {
+        return {
+            restrict:"A",
+            scope: false,
+            templateUrl:"templates/scopeDemoFalseTemplate.html",
         };
     }
 
