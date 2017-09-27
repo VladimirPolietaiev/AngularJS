@@ -19,6 +19,7 @@
         .directive("unorderedList12", unorderedList12)
         .directive("scopeDemoFalse", scopeDemoFalse)
         .directive("scopeDemoTrue", scopeDemoTrue)
+        .directive("scopeDemoIsolated", scopeDemoIsolated)
     ;
     
     
@@ -300,6 +301,14 @@
             restrict:"A",
             scope: true,
             templateUrl:"templates/scopeDemoFalseTemplate.html",
+        };
+    }
+
+    function scopeDemoIsolated() {
+        return {
+            restrict:"A",
+            scope: {},
+            templateUrl:"templates/userDataTemplate.html",
         };
     }
 
