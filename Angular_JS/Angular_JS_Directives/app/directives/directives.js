@@ -22,7 +22,7 @@
         .directive("scopeDemoIsolated", scopeDemoIsolated)
         .directive("component", component)
         .directive("decor1", decor1)
-        .directive("decor2", decor2)
+        .directive("scopeDemoIsolated1", scopeDemoIsolated1)
     ;
     
     
@@ -346,6 +346,17 @@
                 console.log("decor2");
                 console.log("dataSource =" + scope.dataSource);
             }
+        };
+    }
+
+    function scopeDemoIsolated1() {
+        return {
+            restrict:"A",
+            scope: {
+                local:"@prop"
+            },
+            templateUrl:"templates/scopeBindingsTemplate.html"
+
         };
     }
 
