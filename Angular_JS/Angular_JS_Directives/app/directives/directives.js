@@ -25,6 +25,8 @@
         .directive("scopeDemoIsolated1", scopeDemoIsolated1)
         .directive("scopeDemoIsolated2", scopeDemoIsolated2)
         .directive("scopeDemoIsolated3", scopeDemoIsolated3)
+        .directive("greeting", greeting)
+
     ;
     
     
@@ -382,6 +384,19 @@
             },
             templateUrl:"templates/scopeEvalTemplate.html"
 
+        };
+    }
+
+    function greeting() {
+        return {
+            restrict:"E",
+            scope: {},
+            templateUrl:"templates/greetingTemplate.html",
+            controller: function ($scope) {
+                $scope.sayHello = function () {
+                    alert("Hello");
+                }
+            }
         };
     }
 
