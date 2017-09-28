@@ -23,6 +23,7 @@
         .directive("component", component)
         .directive("decor1", decor1)
         .directive("scopeDemoIsolated1", scopeDemoIsolated1)
+        .directive("scopeDemoIsolated2", scopeDemoIsolated2)
     ;
     
     
@@ -354,6 +355,17 @@
             restrict:"A",
             scope: {
                 local:"@prop"
+            },
+            templateUrl:"templates/scopeBindingsTemplate.html"
+
+        };
+    }
+
+    function scopeDemoIsolated2() {
+        return {
+            restrict:"A",
+            scope: {
+                local:"=prop"
             },
             templateUrl:"templates/scopeBindingsTemplate.html"
 
