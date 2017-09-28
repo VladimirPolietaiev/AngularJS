@@ -24,6 +24,7 @@
         .directive("decor1", decor1)
         .directive("scopeDemoIsolated1", scopeDemoIsolated1)
         .directive("scopeDemoIsolated2", scopeDemoIsolated2)
+        .directive("scopeDemoIsolated3", scopeDemoIsolated3)
     ;
     
     
@@ -368,6 +369,18 @@
                 local:"=prop"
             },
             templateUrl:"templates/scopeBindingsTemplate.html"
+
+        };
+    }
+
+    function scopeDemoIsolated3() {
+        return {
+            restrict:"A",
+            scope: {
+                local:"=prop",
+                cityFn:"&city"
+            },
+            templateUrl:"templates/scopeEvalTemplate.html"
 
         };
     }
