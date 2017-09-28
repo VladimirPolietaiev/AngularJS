@@ -26,6 +26,7 @@
         .directive("scopeDemoIsolated2", scopeDemoIsolated2)
         .directive("scopeDemoIsolated3", scopeDemoIsolated3)
         .directive("greeting", greeting)
+        .directive("greeting2", greeting2)
 
     ;
     
@@ -397,6 +398,15 @@
                     alert("Hello");
                 }
             }
+        };
+    }
+
+    function greeting2() {
+        return {
+            restrict:"E",
+            scope: {},
+            templateUrl:"templates/greetingTemplate.html",
+            controller: "Greeting"
         };
     }
 
