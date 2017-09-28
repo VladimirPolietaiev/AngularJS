@@ -25,6 +25,7 @@
         .directive("scopeDemoIsolated1", scopeDemoIsolated1)
         .directive("scopeDemoIsolated2", scopeDemoIsolated2)
         .directive("scopeDemoIsolated3", scopeDemoIsolated3)
+        .directive("scopeDemoIsolated4", scopeDemoIsolated4)
         .directive("greeting", greeting)
         .directive("greeting2", greeting2)
         .directive("greeting3", greeting3)
@@ -386,6 +387,21 @@
             },
             templateUrl:"templates/scopeEvalTemplate.html"
 
+        };
+    }
+
+    function scopeDemoIsolated4() {
+        return {
+            restrict:"A",
+            scope: {
+                prop:"@"
+            },
+            template:"<p>{{ctrl.prop}} = {{ctrl.result}}</p>",
+            controllerAs: "ctrl",
+            bindToController: true,
+            controller: function () {
+                this.result = 111;
+            }
         };
     }
 
