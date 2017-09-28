@@ -27,6 +27,7 @@
         .directive("scopeDemoIsolated3", scopeDemoIsolated3)
         .directive("greeting", greeting)
         .directive("greeting2", greeting2)
+        .directive("greeting3", greeting3)
 
     ;
     
@@ -407,6 +408,16 @@
             scope: {},
             templateUrl:"templates/greetingTemplate.html",
             controller: "Greeting"
+        };
+    }
+
+    function greeting3() {
+        return {
+            restrict:"E",
+            scope: {},
+            templateUrl:"templates/greetingTemplate.html",
+            controller: "@",
+            name: "ctrl"
         };
     }
 
