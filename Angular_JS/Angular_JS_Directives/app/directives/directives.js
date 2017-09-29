@@ -32,6 +32,9 @@
         .directive("greeting4", greeting4)
         .directive("hello", hello)
         .directive("hi", hi)
+        .directive("greeting5", greeting5)
+        .directive("hello2", hello2)
+        .directive("hi2", hi2)
 
     ;
     
@@ -472,6 +475,45 @@
         return {
             restrict:"A",
             require: "greeting4",
+            link: function (scope, element, attrs, controller) {
+                controller.addGreeting("Hi");
+            }
+        };
+    }
+
+    function greeting5() {
+        var greetings = [];
+
+        return {
+            restrict:"E",
+            scope: {},
+            templateUrl:"templates/greetingTranscludeTemplate.html",
+            transclude: true,
+            controller: function ($scope) {
+                $scope.sayHello = function () {
+                    alert(greetings.join());
+                };
+                this.addGreeting = function (greeting) {
+                    greetings.push(greeting);
+                };
+            }
+        };
+    }
+
+    function hello2() {
+        return {
+            restrict:"A",
+            require: "^greeting5",
+            link: function (scope, element, attrs, controller) {
+                controller.addGreeting("Hello");
+            }
+        };
+    }
+
+    function hi2() {
+        return {
+            restrict:"A",
+            require: "^greeting5",
             link: function (scope, element, attrs, controller) {
                 controller.addGreeting("Hi");
             }
