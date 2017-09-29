@@ -29,6 +29,9 @@
         .directive("greeting", greeting)
         .directive("greeting2", greeting2)
         .directive("greeting3", greeting3)
+        .directive("greeting4", greeting4)
+        .directive("hello", hello)
+        .directive("hi", hi)
 
     ;
     
@@ -437,4 +440,41 @@
         };
     }
 
+    function greeting4() {
+        var greetings = [];
+
+        return {
+            restrict:"E",
+            scope: {},
+            templateUrl:"templates/greetingTemplate.html",
+            controller: function ($scope) {
+                $scope.sayHello = function () {
+                    alert(greetings.join());
+                };
+                this.addGreeting = function (greeting) {
+                    greetings.push(greeting);
+                };
+            }
+        };
+    }
+
+    function hello() {
+        return {
+            restrict:"A",
+            require: "greeting4",
+            link: function (scope, element, attrs, controller) {
+                controller.addGreeting("Hello");
+            }
+        };
+    }
+
+    function hi() {
+        return {
+            restrict:"A",
+            require: "greeting4",
+            link: function (scope, element, attrs, controller) {
+                controller.addGreeting("Hi");
+            }
+        };
+    }
 })();
