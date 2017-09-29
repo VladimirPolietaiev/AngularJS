@@ -465,8 +465,10 @@
         return {
             restrict:"A",
             require: "greeting4",
-            link: function (scope, element, attrs, controller) {
+            priority:2,
+            link:{ pre: function (scope, element, attrs, controller) {
                 controller.addGreeting("Hello");
+                 }
             }
         };
     }
@@ -475,8 +477,10 @@
         return {
             restrict:"A",
             require: "greeting4",
-            link: function (scope, element, attrs, controller) {
+            priority:1,
+            link:{ pre:function (scope, element, attrs, controller) {
                 controller.addGreeting("Hi");
+                }
             }
         };
     }
@@ -519,4 +523,6 @@
             }
         };
     }
+
+
 })();
