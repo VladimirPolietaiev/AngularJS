@@ -35,7 +35,7 @@
         .directive("greeting5", greeting5)
         .directive("hello2", hello2)
         .directive("hi2", hi2)
-
+        .directive("panel", panel)
     ;
     
     
@@ -520,6 +520,17 @@
             require: "^greeting5",
             link: function (scope, element, attrs, controller) {
                 controller.addGreeting("Hi");
+            }
+        };
+    }
+
+    function panel() {
+        return {
+            restrict:"E",
+            templateURL:"templates/panelTemplate.html",
+            transclude: true,
+            scope: {
+                title: "@"
             }
         };
     }
